@@ -1,6 +1,6 @@
 
 # 🔒 Applications Réparties & Cybersécurité — Sérialisation, Marshalling & Threat Modeling
-
+![Description de l'image](tp4.png)
 Ce projet met en œuvre des pratiques avancées de **sérialisation sécurisée**, de contrôle des formats de données en transit (JSON et Google Protocol Buffers), ainsi qu'un laboratoire pratique de **Threat Modeling** basé sur le principe du *Fail-Closed*.
 
 L'objectif de cette architecture modulaire est de démontrer comment intercepter les vecteurs d'attaque courants liés aux flux réseau (Mass Assignment, DoS par injection récursive, RCE, et Data Tampering).
@@ -17,7 +17,7 @@ Le projet a été découpé de manière modulaire afin d'isoler la logique méti
 ---
 
 ## 🛠️ Concepts & Fonctionnalités Clés
-![Description de l'image](tp4.png)
+
 ### 1. Contrat JSON Strict & Validation Fail-Closed
 Toute désérialisation applique une validation exhaustive (types natifs, allowlists de classification, format ISO 8601 strict). À la moindre non-conformité, le payload est intégralement rejeté sans traitement partiel (*Fail-Closed*), protégeant l'application contre l'injection de structures inattendues.
 
